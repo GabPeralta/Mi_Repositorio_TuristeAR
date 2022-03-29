@@ -19,6 +19,15 @@ html { height: -webkit-fill-available;
     
 }
 
+a{
+    text-decoration: none;
+    color:#001858;
+}
+
+body header {
+    position: fixed;
+    top: 0;
+  }
 
 .header {
     background-color: #FF6E6C;
@@ -36,12 +45,12 @@ html { height: -webkit-fill-available;
 }
 
 .nav-menu-item {
-    color: darkblue;
+    color: #FEF6E4;
     text-decoration: none;
 }
 
 .logo {
-    margin-right: 1em;
+    margin-right: 0.5em;
     
     margin-top: 1em;
 }
@@ -55,6 +64,7 @@ header nav a img {
     display: flex;
     list-style: none;
     margin: 0em;
+    color: #FEF6E4;
 }
 
 .header{
@@ -75,7 +85,7 @@ header nav a img {
 }
 
 .nav-menu-link:hover {
-    background-color: aqua;
+    background-color: #FEF6E4;
     transition: 0.5s;
     transform: scale(1.5em );
 }
@@ -102,7 +112,7 @@ header nav a img {
 @media (max-width: 768px) {
 
        #menu {
-       background-color: aqua;
+       background-color: #FEF6E4;
        flex-direction: column;
        align-items: center;
        margin-right: 20px;
@@ -131,7 +141,7 @@ header nav a img {
 
     .nav-menu-link:hover {
         background-color: none;
-        color: #FF6E6C;
+        color: #ffeaea;
         transition: 0.5s;
     }
 
@@ -140,28 +150,22 @@ header nav a img {
 /* home */
 
 #imgfondo {
-    display: flex;
-    justify-content: center;
-    background-image: url("../public/img/portadahome.jpg");
-    height: 70vh;
-    background-repeat: no-repeat;
-    margin-top: 1em;
-}
-
-#imgfondo {
     text-align: center;
-    margin: 0px 20px 5px 20px;
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #portada{
-    margin-top: 10em;
+    margin-top: 1em;
 }
 
-.titulo-portada {
-     font-size: 3em;
+div h2 {
+     font-size: 5em;
+     margin: 1em;
      font-weight: bold;
      text-align: center;
-     color: #080e68;
+     color:  #FF6E6C;
 }
 
 .bajada-portada {
@@ -169,6 +173,12 @@ header nav a img {
     text-align: center;
     font-weight: bold;
     color: #080e68;
+    margin-bottom: 1em;
+    
+}
+
+#text_color{
+    color: #FEF6E4;
 }
 
 /* home franja azul*/
@@ -253,7 +263,7 @@ h5 {
 
 }
 
-h2 {
+h {
     margin: 0.7em;
     color: #001858;
 
@@ -278,23 +288,32 @@ h4 {
 
 /* Seccion destinos*/
 
-#secciondestinos {
-    display: grid;
-    align-content: center;
-    grid-template-columns: 85% 85% 85% 85%;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 20px;
-    width: 28%;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 0em;
-    margin-left: 1em;
-    margin-right: 1em;
-    grid-auto-flow: row;
-    
+.container{
+    margin-top: 6em;
+    margin-bottom: 1em;
 }
 
+.btn{
+    color: #FF6E6C;
+}
+
+.card{
+    background-color: #fcafaf;
+    border-radius: 15px;
+}
+
+.row{
+    margin-top: 2em;
+}
+.card img{
+    border-radius: 15px;
+    border-color: #fcafaf;
+}
+
+.card-title{
+    color: #001858;
+
+}
 /* seccioncontacto*/
 
 .gradientefondo{
