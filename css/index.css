@@ -11,6 +11,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FEF6E4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 html { height: -webkit-fill-available; 
@@ -31,11 +35,12 @@ body header {
 
 .header {
     background-color: #FF6E6C;
-    position: fixed;
+    position:static;
     height: 5em;
     margin-top: 0em;
-    margin-bottom: 10em;
+    margin-bottom: 1em;
     width: 100%;
+
 }
 
 .nav {
@@ -67,9 +72,7 @@ header nav a img {
     color: #FEF6E4;
 }
 
-.header{
-    margin-bottom: 100px;
-}
+
 .nav-menu-item{
     font-size: 16px;
     font-weight: bold;
@@ -151,7 +154,7 @@ header nav a img {
 
 #imgfondo {
     text-align: center;
-    margin-top: 6em;
+    margin-top: 2em;
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -213,11 +216,13 @@ div h2 {
 }
 
 .cardsazul img{
-    margin-top: 1.5em;
-   
+    margin-top: 2em;
+    
     background-color: aqua ;
     max-width: 80px;
     padding: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 15px;
     justify-content: center;
 }
@@ -244,7 +249,7 @@ h5 {
     align-content: center;
     grid-template-columns: 85% 85% 85% 85%;
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 16px;
     width: 28%;
     max-width: 100%;
     margin: auto;
@@ -263,14 +268,18 @@ h5 {
 
 }
 
-h {
-    margin: 0.7em;
+h2 {
+    font-weight: bold;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     color: #001858;
 
 }
 
 h4 {
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
     color: #001858;
 
 }
@@ -289,12 +298,11 @@ h4 {
 /* Seccion destinos*/
 
 .container{
-    margin-top: 6em;
-    margin-bottom: 1em;
+    
 }
 
 .btn{
-    color: #FF6E6C;
+    color: #ffeeee;
 }
 
 .card{
@@ -303,66 +311,120 @@ h4 {
 }
 
 .row{
-    margin-top: 2em;
+    margin-top: 3em;
+    padding-right: 0em;
+    margin-right: 0em;
+    margin-right: 0em;
 }
 .card img{
     border-radius: 15px;
     border-color: #fcafaf;
+    padding: 0.4em;
 }
 
 .card-title{
     color: #001858;
+    font-weight: bold;
 
 }
+
+/* seccionsomos*/
+#portada-somos{
+    background-image: url("../public/img/portada-somos.jpg");
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#bajada-somos{
+    font-size: 50px;
+    color: #FEF6E4;
+    padding: 3em 0em 0em 16em;
+
+}
+
 /* seccioncontacto*/
 
-.gradientefondo{
-    background-image: linear-gradient(to bottom, #FEF6E4 , #FF6E6C );
+#portada-contacto{
+    background-image: url("../public/img/portada-contacto");
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
+
+.titulo_bajada_contacto{
+    font-size: 50px;
+    margin-top: 2em;
+    margin-left: 20em;
+    margin-top: 0.5em;
+    color: #FEF6E4;
+}
+
+.bajada-contacto{
+    font-size: 30px;
+    margin-top: 3em;
+    margin-left: 20em;
+    color: #FEF6E4;
+}
+
+.gradientefondo{
+    background-image: linear-gradient(to bottom, #FEF6E4 , #f89e9d );
+}
+
+.form{
+    margin-top: 15em;
+}
+
 
 
 /*Footer*/
 
+
 #footer{
     background-color: #FF6E6C;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
     margin-top: 2em;
     list-style-type: none;
     text-decoration: none;
     padding-top: 1em;
 }
 
-
-#info{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+li{
+    text-decoration: none;
+    list-style-type:none;
 }
 
-#redes li img{
-    display: flex;
-    align-content: space-between;
-    margin-top: 1em;
-
+#footer{
+    margin: 2em 0em 0em 0em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48em;
+    justify-content: center;
+    position:relative;
 }
+
+#redes img{
+    margin: 0.6em;
+}
+
+
 
 /* Footer responsive */
 
 @media (max-width: 768px){
     #footer{
-        display: flex;
+        margin: 0em 0em 0em 0em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
         justify-content: center;
-        list-style-type: none;
-        text-align: center;
-        text-decoration: none;
-
     }
 
     #redes{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        margin-left: 2em;
+        margin-bottom: 1em;
     }
 }
