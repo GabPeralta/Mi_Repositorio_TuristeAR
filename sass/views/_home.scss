@@ -1,0 +1,83 @@
+/* home */
+    
+    #imgfondo {
+        text-align: center;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+    #portada{
+        margin-top: 1em;
+    }
+    
+    div h2 {
+         font-size: 5em;
+         margin: 1em;
+         font-weight: bold;
+         text-align: center;
+         color:  #FF6E6C;
+    }
+    
+    .bajada-portada {
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+        color: #080e68;
+        margin-bottom: 1em;
+        
+    }
+    
+    #text_color{
+        color: #FEF6E4;
+    }
+    
+    
+    .cardsazul{
+        display: flex;
+        flex-wrap: nowrap ;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #001858;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 2em;
+
+        & p {
+            font-weight: normal;
+            color: #FEF6E4;
+            font-size: 12px;
+            margin: 1em;   
+        }
+
+        img{
+            margin-top: 2em;
+            
+            background-color: aqua ;
+            max-width: 80px;
+            padding: 0.5em;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 15px;
+            justify-content: center;
+        }
+    }
+    
+    
+    h5 {
+        align-content: center;
+        color: #FEF6E4;
+        font-weight: bold;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        
+    }
+
+        /* home franja azul responsive*/
+    
+        @media (max-width: 768px){
+            .cardsazul{
+                display: flex;
+                flex-direction: column;
+            }
+        }

@@ -1,0 +1,21 @@
+/* Imports */
+
+/* Miscelaneous*/
+@import './misc/normalize';
+
+
+/* Partials */
+@import './partials/header';
+@import './partials/footer';
+
+/* Views */
+@import './views/home';
+@import './views/destinos';
+@import './views/galeria';
+@import './views/somos';
+@import './views/contacto';
+
+
+@import './misc/animations';
+@import './misc/mixins';
+@import './misc/variables';

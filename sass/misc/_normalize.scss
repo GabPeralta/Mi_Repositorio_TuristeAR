@@ -1,0 +1,27 @@
+/* GLOBALS*/
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FEF6E4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html { height: -webkit-fill-available; 
+    scroll-behavior: smooth;
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#001858;
+}

@@ -25,6 +25,39 @@ a {
   color: #001858; }
 
 /* Partials */
+/*Footer*/
+#footer {
+  background-color: #FF6E6C;
+  margin-top: 2em;
+  list-style-type: none;
+  text-decoration: none;
+  padding-top: 1em;
+  margin: 2em 0em 0em 0em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 48em;
+  justify-content: center;
+  position: relative; }
+
+li {
+  text-decoration: none;
+  list-style-type: none; }
+
+#redes img {
+  margin: 0.6em; }
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  #footer {
+    margin: 0em 0em 0em 0em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    justify-content: center; }
+  #redes {
+    margin-left: 2em;
+    margin-bottom: 1em; } }
+
 body header {
   position: fixed;
   top: 0; }
@@ -103,8 +136,8 @@ header nav div input:checked {
     overflow-y: auto; }
   .logo {
     display: flex;
-    margin-top: 5px;
-    margin-left: 1em; }
+    margin-top: 10px;
+    margin-left: -1.5em; }
   #menuhamburguesa {
     display: block;
     background-color: #FF6E6C;
@@ -117,104 +150,7 @@ header nav div input:checked {
     color: #ffeaea;
     transition: 0.5s; } }
 
-/*Footer*/
-#footer {
-  background-color: #FF6E6C;
-  margin-top: 2em;
-  list-style-type: none;
-  text-decoration: none;
-  padding-top: 1em;
-  margin: 2em 0em 0em 0em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 48em;
-  justify-content: center;
-  position: relative; }
-
-li {
-  text-decoration: none;
-  list-style-type: none; }
-
-#redes img {
-  margin: 0.6em; }
-
-/* Footer responsive */
-@media (max-width: 768px) {
-  #footer {
-    margin: 0em 0em 0em 0em;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
-    justify-content: center; }
-  #redes {
-    margin-left: 2em;
-    margin-bottom: 1em; } }
-
 /* Views */
-/* home */
-#imgfondo {
-  text-align: center;
-  margin-top: 2em;
-  margin-left: 1em;
-  margin-right: 1em; }
-
-#portada {
-  margin-top: 1em; }
-
-div h2 {
-  font-size: 5em;
-  margin: 1em;
-  font-weight: bold;
-  text-align: center;
-  color: #FF6E6C; }
-
-.bajada-portada {
-  font-size: 2em;
-  text-align: center;
-  font-weight: bold;
-  color: #080e68;
-  margin-bottom: 1em; }
-
-#text_color {
-  color: #FEF6E4; }
-
-.cardsazul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  text-align: center;
-  background-color: #001858;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 2em; }
-  .cardsazul p {
-    font-weight: normal;
-    color: #FEF6E4;
-    font-size: 12px;
-    margin: 1em; }
-  .cardsazul img {
-    margin-top: 2em;
-    background-color: aqua;
-    max-width: 80px;
-    padding: 0.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
-    justify-content: center; }
-
-h5 {
-  align-content: center;
-  color: #FEF6E4;
-  font-weight: bold;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
-
-/* home franja azul responsive*/
-@media (max-width: 768px) {
-  .cardsazul {
-    display: flex;
-    flex-direction: column; } }
-
 /* Seccion destinos*/
 .container .btn {
   color: #ffeeee; }
@@ -313,3 +249,65 @@ h4 {
     background-image: linear-gradient(to bottom, #FEF6E4, #f89e9d); }
   #portada-contacto .form {
     margin-top: 15em; }
+
+/* home */
+main #imgfondo {
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+main #portada {
+  margin-top: 1em; }
+
+main div h2 {
+  font-size: 5em;
+  margin: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #FF6E6C; }
+
+main .bajada-portada {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: #080e68;
+  margin-bottom: 1em; }
+
+main #text_color {
+  color: #FEF6E4; }
+
+/* home franja azul*/
+@media (max-width: 768px) {
+  .cardsazul {
+    display: flex;
+    flex-direction: column; }
+  .cardsazul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #001858;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em; }
+    .cardsazul p {
+      font-weight: normal;
+      color: #FEF6E4;
+      font-size: 12px;
+      margin: 1em; }
+    .cardsazul img {
+      margin-top: 2em;
+      background-color: aqua;
+      max-width: 80px;
+      padding: 0.5em;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 15px;
+      justify-content: center; }
+  h5 {
+    align-content: center;
+    color: #FEF6E4;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; } }
