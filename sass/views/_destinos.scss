@@ -9,16 +9,15 @@
         background-color: #fcafaf;
         border-radius: 15px;
 
-        .card img{
+        & img{
             border-radius: 15px;
             border-color: #fcafaf;
             padding: 0.4em;
         }
 
-        .card-title{
+        &-title{
             color: #001858;
             font-weight: bold;
-    
         }
     }
 
