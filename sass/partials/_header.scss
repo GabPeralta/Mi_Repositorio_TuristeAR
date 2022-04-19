@@ -5,7 +5,7 @@ body header {
   }
 
 .header {
-    background-color: $principal;
+    background-color: #FF6E6C;
     position:static;
     height: 5em;
     margin-top: 0em;
@@ -26,8 +26,7 @@ body header {
 }
 
 .logo {
-    margin-right: 0.5em;
-    
+    margin-right: 0.7em;
     margin-top: 1em;
 }
 
@@ -99,9 +98,23 @@ header nav div input:checked {
     }
 
     .logo {
-        display: flex;
-        margin-top: 5px;
-        margin-left: 1em; 
+        margin-top: 1.2em;
+        margin-left: -25px;
+    }
+
+    .barra {
+        display: none;
+
+    }
+
+    #menu{
+        position: relative;
+        height: 100px;
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
     }
 
     #menuhamburguesa {
@@ -109,14 +122,40 @@ header nav div input:checked {
         background-color: #FF6E6C;
         border: none;
         margin-right: 60px;
-        margin-top: 1.4em;
+        margin-top: 2em;
         border-image: 1px;
     }
 
     .nav-menu-link:hover {
         background-color: none;
-        color: #ffeaea;
+        color: #FF6E6C;
         transition: 0.5s;
+        
     }
 
+    
+
+    header nav label:hover {cursor: pointer;}
+
+    .menu-hamburguesa {display: block;
+                width: 45px;
+                height: 30px;}
+
+
+    .check1:checked ~ #menu {
+        margin: 0;
+        opacity: 1;
+        margin-top: 20px;
+        transition: all 0.4s ease;
+    }
+
+    .check1:checked ~ #menu ul li {
+    border-bottom: solid 2px black;
+    }
+
+
+}
+
+@media (max-width: 480px){
+    
 }

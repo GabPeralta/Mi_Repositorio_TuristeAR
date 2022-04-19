@@ -46,7 +46,7 @@ body header {
   text-decoration: none; }
 
 .logo {
-  margin-right: 0.5em;
+  margin-right: 0.7em;
   margin-top: 1em; }
 
 header nav a img {
@@ -102,20 +102,42 @@ header nav div input:checked {
     padding: 0em;
     overflow-y: auto; }
   .logo {
-    display: flex;
-    margin-top: 5px;
-    margin-left: 1em; }
+    margin-top: 1.2em;
+    margin-left: -25px; }
+  .barra {
+    display: none; }
+  #menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px; }
   #menuhamburguesa {
     display: block;
     background-color: #FF6E6C;
     border: none;
     margin-right: 60px;
-    margin-top: 1.4em;
+    margin-top: 2em;
     border-image: 1px; }
   .nav-menu-link:hover {
     background-color: none;
-    color: #ffeaea;
-    transition: 0.5s; } }
+    color: #FF6E6C;
+    transition: 0.5s; }
+  header nav label:hover {
+    cursor: pointer; }
+  .menu-hamburguesa {
+    display: block;
+    width: 45px;
+    height: 30px; }
+  .check1:checked ~ #menu {
+    margin: 0;
+    opacity: 1;
+    margin-top: 20px;
+    transition: all 0.4s ease; }
+  .check1:checked ~ #menu ul li {
+    border-bottom: solid 2px black; } }
 
 /*Footer*/
 #footer {
@@ -212,7 +234,13 @@ h5 {
 @media (max-width: 768px) {
   .cardsazul {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  h2 {
+    font-size: 10px; }
+  .bajada-portada {
+    font-size: 8px; }
+  .imgfondo {
+    margin-top: 150px; } }
 
 /* Seccion destinos*/
 .container .btn {
@@ -223,36 +251,30 @@ h5 {
   border-radius: 15px; }
   .container .card img {
     border-radius: 15px;
-    border-color: #fcafaf;
-    padding: 0.4em; }
+    border-color: #fcafaf; }
   .container .card-title {
     color: #001858;
     font-weight: bold; }
 
 .container .row {
-  margin-top: 3em;
-  padding-right: 0em;
-  margin-right: 0em;
-  margin-right: 0em; }
+  margin-top: 3em; }
 
 /* seccion de galeria*/
 #secciongaleria {
+  width: 85%;
   display: grid;
   align-content: center;
   grid-template-columns: 85% 85% 85% 85%;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 16px;
-  width: 28%;
   margin: auto;
   margin-top: 1em;
-  margin-bottom: 0em;
   margin-left: 1em;
   margin-right: 1em;
   grid-auto-flow: row; }
   #secciongaleria #secciongaleria picture img {
     width: 25%;
-    height: 25%;
-    object-fit: cover; }
+    height: 25%; }
 
 h2 {
   font-weight: bold;
@@ -261,18 +283,31 @@ h2 {
   color: #001858; }
 
 h4 {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   margin-top: 0.5em;
   color: #001858; }
 
 /* responsive de seccion galeria*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   #secciongaleria {
+    width: 95%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1em;
+    margin-left: 1em;
+    border-radius: 5em; }
+  picture img {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-    grid-template-rows: 200px; } }
+    height: 100%; }
+  h2 {
+    font-size: 10px;
+    margin: 1em; }
+  h4 {
+    font-size: 10px;
+    margin: 1em; } }
 
 /* seccionsomos*/
 #portada-somos {

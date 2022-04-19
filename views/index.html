@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="../css/index.css">
     <title> TuristeAR </title>
     <link rel="shortcut icon" href="../public/img/logo.svg">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <!--inicio del header-->
@@ -21,36 +20,31 @@
     <header class="header">
         <nav class="nav">
 
-            <a href="index.html" class="logo"> <img src="../public/img/logo.svg" alt="logomarca" height="100vh" width="100vh" > </a>
+            <a href="index.html" class="logo"> <img src="../public/img/logo.svg" alt="logomarca" > </a>
 
             
-            <div id="menuhamburguesa" > 
+            <div id="menuhamburguesa"> 
                 <img class="menu-hamburguesa" src="../public/img/menu-icono.png" alt="iconomenu" height="30em" width="45em">
+            
+                <input type="checkbox" id="check">
+                <label for="check1" class="barra">
+                    
+                </label>
             </div>
-
-             <input type="checkbox" id="check">
-             <label for="check" class="barra">
-
-             </label>
+            <ul id="menu">
+                <li class="nav-menu-item"><a href="destinos.html" class="nav-menu-link">Destinos</a>
+                </li>
             
-        <ul id="menu">
-             <li class="nav-menu-item menu__item--active">
-                 <a href="destinos.html" class="nav-menu-link">Destinos</a>
-             </li>
-           
-             <li class="nav-menu-item menu__item--active">
-                  <a href="galeria.html" class="nav-menu-link">Galeria</a>
-              </li>
-            
-             <li class="nav-menu-item menu__item--active">
-                 <a href="somos.html" class="nav-menu-link">¿Quien somos?</a>
-             </li>
-            
-             <li class="nav-menu-item menu__item--active">
-                    <a href="contacto.html" class="nav-menu-link">Contacto</a>
-            </li>
-        </ul>
-    </div>
+                <li class="nav-menu-item"><a href="galeria.html" class="nav-menu-link">Galeria</a>
+                </li>
+                
+                <li class="nav-menu-item"><a href="somos.html" class="nav-menu-link">¿Quien somos?</a>
+                </li>
+                
+                <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
         </nav>
 
     </header>
@@ -145,7 +139,11 @@
     </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
 </html>
 
 
