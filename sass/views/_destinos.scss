@@ -3,7 +3,7 @@
 .container{
     .btn{
         color: #ffeeee;
-    }
+        }
 
     .card{
         background-color: #fcafaf;
@@ -12,18 +12,15 @@
         & img{
             border-radius: 15px;
             border-color: #fcafaf;
-            
-        }
+            }
 
         &-title{
             color: #001858;
             font-weight: bold;
-        }
+            }
     }
 
     .row{
         margin-top: 3em;
-    }
-
-
+        }
 }
