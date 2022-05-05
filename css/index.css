@@ -247,18 +247,33 @@ h5 {
 .container .btn {
   color: #ffeeee; }
 
+.container .btn-primary {
+  background-color: #001858;
+  border-color: #001858; }
+
 .container .card {
   background-color: #fcafaf;
-  border-radius: 15px; }
-  .container .card img {
-    border-radius: 15px;
-    border-color: #fcafaf; }
-  .container .card-title {
-    color: #001858;
-    font-weight: bold; }
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto; }
+
+.container img {
+  border-radius: 20px;
+  border-color: #fcafaf;
+  padding: 10px; }
+
+.container-title {
+  color: #001858;
+  font-weight: bold; }
 
 .container .row {
   margin-top: 3em; }
+
+.title-destino {
+  margin: 1em;
+  margin-top: 2em;
+  text-align: center; }
 
 /* seccion de galeria*/
 #secciongaleria {
@@ -275,6 +290,14 @@ h5 {
   #secciongaleria img {
     width: 100%;
     height: 100%; }
+
+picture:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #FEF6E4;
+  filter: saturate(180%); }
 
 h2 {
   font-weight: bold;
@@ -307,7 +330,11 @@ h4 {
     margin: 1.5em; }
   h4 {
     font-size: 12px;
-    margin: 1.5em; } }
+    margin: 1.5em; }
+  img:hover {
+    -webkit-transform: none;
+    transform: none;
+    filter: saturate(180%); } }
 
 /* seccionsomos*/
 #portada-somos {
@@ -325,7 +352,7 @@ h4 {
 
 #video {
   margin-left: 100em;
-  margin-top: 10em;
+  margin-top: 1em;
   margin-right: 100px;
   border: 10em;
   width: 350em;

@@ -5,22 +5,38 @@
         color: #ffeeee;
         }
 
+    .btn-primary{
+        background-color: #001858;
+        border-color: #001858;
+    }
+
     .card{
         background-color: #fcafaf;
-        border-radius: 15px;
+        border-radius: 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+    }
 
         & img{
-            border-radius: 15px;
+            border-radius: 20px;
             border-color: #fcafaf;
+            padding: 10px;
             }
 
         &-title{
             color: #001858;
             font-weight: bold;
             }
-    }
 
-    .row{
+    & .row {
         margin-top: 3em;
         }
 }
+
+.title-destino{
+    margin: 1em;
+    margin-top: 2em;
+    text-align: center;
+    }
